@@ -1,0 +1,12 @@
+- ReCaptcha
+- RichText TinyMCE
+- PropelUniqueValidator
+- widget select checkboxes
+- double list
+- date calendar
+
+- Forms / Genereic modules? -> Propel dependency? or not?
+  - comments
+  - Contact form with captcha
+  - blog?
+  - ...
