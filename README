@@ -21,6 +21,8 @@ because they are too specific or have external dependencies.
 
 == Forms ==
 
+  * sfFormLanguage: A form to change the symfony user culture
+
 == Validators ==
 
 == Widgets ==

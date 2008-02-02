@@ -26,8 +26,13 @@
      <file role="data" name="README" />
      <file role="data" name="LICENSE" />
 
+     <dir name="bin">
+       <file role="data" name="prove.php" />
+     </dir>
+
      <dir name="lib">
        <dir name="form">
+         <file role="data" name="sfFormLanguage.class.php" />
        </dir>
        <dir name="validator">
        </dir>
@@ -36,7 +41,9 @@
      </dir>
 
      <dir name="test">
+       <file role="data" name="bootstrap.php" />
        <dir name="form">
+         <file role="data" name="sfFormLanguageTest.php" />
        </dir>
        <dir name="validator">
        </dir>
