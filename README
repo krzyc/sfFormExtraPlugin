@@ -19,13 +19,21 @@ because they are too specific or have external dependencies.
       symfony cache:clear
     }}}
 
+== Documentation ==
+
+All classes have full API and usage documentation. The API documentation is available here.
+
 == Forms ==
 
   * sfFormLanguage: A form to change the symfony user culture
 
 == Validators ==
 
+  * sfValidatorReCaptcha: Validates a ReCaptcha (see sfWidgetFormReCaptcha)
+
 == Widgets ==
+
+  * sfWidgetFormReCaptcha: Display a ReCaptcha widget (see sfValidatorReCaptcha)
 
 == How to contribute ==
 
@@ -34,13 +42,11 @@ If you want to contribute a validator, a widget, or a form, follow these steps:
   * Check the prerequisites
     * The license must be MIT
     * You must have a unit test suite (100% coverage)
-    * You must have PHPdoc for all classes and methods
+    * You must have PHPdoc for all classes and methods with a documentation usage
     * You must follow symfony coding standards
-    * You must write a documentation usage
     * The contribution must not be too specific
     * You must be sure you will be able to maintain your contribution
   * Create a ticket and attach a patch
-    * Put the documentation usage in the ticket description
     * Choose `sfFormExtraPlugin` as the component
     * Change the qualification to `Ready for core team`
 

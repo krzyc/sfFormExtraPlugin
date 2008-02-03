@@ -35,8 +35,10 @@
          <file role="data" name="sfFormLanguage.class.php" />
        </dir>
        <dir name="validator">
+         <file role="data" name="sfValidatorReCaptcha.class.php" />
        </dir>
        <dir name="widget">
+         <file role="data" name="sfWidgetFormReCaptcha.class.php" />
        </dir>
      </dir>
 
@@ -46,8 +48,10 @@
          <file role="data" name="sfFormLanguageTest.php" />
        </dir>
        <dir name="validator">
+         <file role="data" name="sfValidatorReCaptchaTest.php" />
        </dir>
        <dir name="widget">
+         <file role="data" name="sfWidgetFormReCaptchaTest.php" />
        </dir>
      </dir>
    </dir>
