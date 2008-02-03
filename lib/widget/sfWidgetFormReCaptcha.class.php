@@ -17,6 +17,17 @@
  *
  * To be able to use this widget, you need an API key: http://recaptcha.net/api/getkey
  *
+ * As it's not possible to change the name of ReCaptcha fields, you will have to add them manually
+ * when binding a form from an HTTP request.
+ *
+ * Here's a typical usage when embedding a captcha in a form with a contact[%s] name format:
+ *
+ *    $captcha = array(
+ *      'recaptcha_challenge_field' => $request->getParameter('recaptcha_challenge_field'),
+ *      'recaptcha_response_field'  => $request->getParameter('recaptcha_response_field'),
+ *    );
+ *    $this->form->bind(array_merge($request->getParameter('contact'), array('captcha' => $captcha)));
+ *
  * @package    symfony
  * @subpackage widget
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
