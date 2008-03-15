@@ -28,7 +28,7 @@
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @version    SVN: $Id$
  */
-class sfValidatorReCaptcha extends sfValidator
+class sfValidatorReCaptcha extends sfValidatorBase
 {
   /**
    * Configures the current validator.
@@ -47,7 +47,7 @@ class sfValidatorReCaptcha extends sfValidator
    *  * captcha
    *  * server_problem
    *
-   * @see sfValidator
+   * @see sfValidatorBase
    */
   protected function configure($options = array(), $messages = array())
   {
@@ -70,7 +70,7 @@ class sfValidatorReCaptcha extends sfValidator
    *
    * It always returns null.
    *
-   * @see sfValidator
+   * @see sfValidatorBase
    */
   protected function doClean($value)
   {
