@@ -30,6 +30,7 @@ All classes have full API and usage documentation. The API documentation is avai
 == Validators ==
 
   * sfValidatorReCaptcha: Validates a ReCaptcha (see sfWidgetFormReCaptcha)
+  * sfValidatorBlacklist: Validates that a value is not one of the configured forbidden ones
 
 == Widgets ==
 
