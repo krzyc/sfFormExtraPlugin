@@ -31,6 +31,7 @@ All classes have full API and usage documentation. The API documentation is avai
 
   * sfValidatorReCaptcha: Validates a ReCaptcha (see sfWidgetFormReCaptcha)
   * sfValidatorBlacklist: Validates that a value is not one of the configured forbidden ones
+  * sfValidatorSchemaTimeInterval: Validates a time interval between two dates provided by a widget schema
 
 == Widgets ==
 
@@ -50,9 +51,3 @@ If you want to contribute a validator, a widget, or a form, follow these steps:
   * Create a ticket and attach a patch
     * Choose `sfFormExtraPlugin` as the component
     * Change the qualification to `Ready for core team`
-
-== Changelog ==
-
-=== 1.0.0 PRE ===
-
-  * Initial release
