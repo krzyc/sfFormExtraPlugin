@@ -71,6 +71,10 @@
        <dir name="js">
          <file role="data" name="double_list.js" />
        </dir>
+       <dir name="image">
+         <file role="data" name="next.png" />
+         <file role="data" name="previous.png" />
+       </dir>
      </dir>
    </dir>
  </contents>
