@@ -35,7 +35,8 @@ All classes have full API and usage documentation. The API documentation is avai
 
 == Widgets ==
 
-  * sfWidgetFormReCaptcha: Display a ReCaptcha widget (see sfValidatorReCaptcha)
+  * sfWidgetFormReCaptcha: Displays a ReCaptcha widget (see sfValidatorReCaptcha)
+  * sfWidgetFormSelectDoubleList: Displays a double list widget
 
 == How to contribute ==
 

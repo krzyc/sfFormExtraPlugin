@@ -48,6 +48,7 @@
        </dir>
        <dir name="widget">
          <file role="data" name="sfWidgetFormReCaptcha.class.php" />
+         <file role="data" name="sfWidgetFormSelectDoubleList.class.php" />
        </dir>
      </dir>
 
@@ -63,6 +64,12 @@
        </dir>
        <dir name="widget">
          <file role="data" name="sfWidgetFormReCaptchaTest.php" />
+       </dir>
+     </dir>
+
+     <dir name="web">
+       <dir name="js">
+         <file role="data" name="double_list.js" />
        </dir>
      </dir>
    </dir>
