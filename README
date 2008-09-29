@@ -37,6 +37,7 @@ All classes have full API and usage documentation. The API documentation is avai
 
   * sfWidgetFormReCaptcha: Displays a ReCaptcha widget (see sfValidatorReCaptcha)
   * sfWidgetFormSelectDoubleList: Displays a double list widget
+  * sfWidgetFormTextareaTinyMCE: A rich textarea rendered with TinyMCE
 
 == How to contribute ==
 
