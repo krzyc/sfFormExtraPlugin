@@ -17,7 +17,7 @@
  *
  * You also need to add an "onsubmit" attribute to your form tag:
  *
- *   onsubmit="double_list_submit(this); return true;"
+ *   onsubmit="double_list_submit(this, 'double_list_select'); return true;"
  *
  * @package    symfony
  * @subpackage widget
