@@ -69,9 +69,9 @@ class sfWidgetFormTextareaTinyMCE extends sfWidgetFormTextarea
     $js = sprintf(<<<EOF
 <script type="text/javascript">
   tinyMCE.init({
-    mode:                              "exact",
+    mode:                              "textareas",
     theme:                             "%s",
-    elements:                          "%s",
+    editor_selector:                   "%s",
     %s
     %s
     theme_advanced_toolbar_location:   "top",
