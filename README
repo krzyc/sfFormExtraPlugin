@@ -37,6 +37,9 @@ All classes have full API and usage documentation. The API documentation is avai
 
   * sfWidgetFormReCaptcha: Displays a ReCaptcha widget (see sfValidatorReCaptcha)
   * sfWidgetFormSelectDoubleList: Displays a double list widget
+  * sfWidgetFormJQueryDate: Displays a date using JQuery UI
+  * sfWidgetFormJQueryAutocompleter: Displays an input tag with autocomplete support using JQuery
+  * sfWidgetFormPropelJQueryAutocompleter: Displays an autocomplete widget tied to a Propel model
   * sfWidgetFormTextareaTinyMCE: A rich textarea rendered with TinyMCE
 
 == How to contribute ==

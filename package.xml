@@ -49,6 +49,9 @@
        <dir name="widget">
          <file role="data" name="sfWidgetFormReCaptcha.class.php" />
          <file role="data" name="sfWidgetFormSelectDoubleList.class.php" />
+         <file role="data" name="sfWidgetFormJQueryDate.class.php" />
+         <file role="data" name="sfWidgetFormJQueryAutocompleter.class.php" />
+         <file role="data" name="sfWidgetFormPropelJQueryAutocompleter.class.php" />
        </dir>
      </dir>
 
@@ -114,8 +117,12 @@
      <date>2008-08-25</date>
      <license>MIT</license>
      <notes>
-      * Added sfValidatorSchemaTimeInterval validator
-      * Added sfValidatorBlacklist validator
+       * Added sfWidgetFormJQueryDate widget
+       * Added sfWidgetFormPropelJQueryAutocompleter widget
+       * Added sfWidgetFormJQueryAutocompleter widget
+       * Added sfWidgetFormSelectDoubleList widget
+       * Added sfValidatorSchemaTimeInterval validator
+       * Added sfValidatorBlacklist validator
      </notes>
    </release>
  </changelog>
