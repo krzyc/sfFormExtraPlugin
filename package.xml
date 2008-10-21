@@ -16,9 +16,9 @@
   <email>nicolas.perriault@symfony-project.com</email>
   <active>yes</active>
  </developer>
- <date>2008-08-25</date>
+ <date>2008-10-21</date>
  <version>
-   <release>1.0.2</release>
+   <release>1.0.3</release>
    <api>1.0.0</api>
  </version>
  <stability>
@@ -42,16 +42,17 @@
          <file role="data" name="sfFormLanguage.class.php" />
        </dir>
        <dir name="validator">
-         <file role="data" name="sfValidatorReCaptcha.class.php" />
          <file role="data" name="sfValidatorBlacklist.class.php" />
+         <file role="data" name="sfValidatorReCaptcha.class.php" />
          <file role="data" name="sfValidatorSchemaTimeInterval.class.php" />
        </dir>
        <dir name="widget">
+         <file role="data" name="sfWidgetFormJQueryAutocompleter.class.php" />
+         <file role="data" name="sfWidgetFormJQueryDate.class.php" />
+         <file role="data" name="sfWidgetFormPropelJQueryAutocompleter.class.php" />
          <file role="data" name="sfWidgetFormReCaptcha.class.php" />
          <file role="data" name="sfWidgetFormSelectDoubleList.class.php" />
-         <file role="data" name="sfWidgetFormJQueryDate.class.php" />
-         <file role="data" name="sfWidgetFormJQueryAutocompleter.class.php" />
-         <file role="data" name="sfWidgetFormPropelJQueryAutocompleter.class.php" />
+         <file role="data" name="sfWidgetFormTextareaTinyMCE.class.php" />
        </dir>
      </dir>
 
@@ -71,10 +72,15 @@
      </dir>
 
      <dir name="web">
+       <dir name="css">
+         <file role="data" name="jquery.autocompleter.css" />
+       </dir>
        <dir name="js">
          <file role="data" name="double_list.js" />
+         <file role="data" name="jquery.autocompleter.js" />
        </dir>
-       <dir name="image">
+       <dir name="images">
+         <file role="data" name="indicator.gif" />
          <file role="data" name="next.png" />
          <file role="data" name="previous.png" />
        </dir>
@@ -106,7 +112,7 @@
  <changelog>
    <release>
      <version>
-       <release>1.0.2</release>
+       <release>1.0.3</release>
        <api>1.0.0</api>
      </version>
      <stability>
@@ -121,6 +127,21 @@
        * Added sfWidgetFormPropelJQueryAutocompleter widget
        * Added sfWidgetFormJQueryAutocompleter widget
        * Added sfWidgetFormSelectDoubleList widget
+     </notes>
+   </release>
+   <release>
+     <version>
+       <release>1.0.2</release>
+       <api>1.0.0</api>
+     </version>
+     <stability>
+       <release>stable</release>
+       <api>stable</api>
+     </stability>
+     <license uri="http://www.symfony-project.com/license">MIT license</license>
+     <date>2008-08-25</date>
+     <license>MIT</license>
+     <notes>
        * Added sfValidatorSchemaTimeInterval validator
        * Added sfValidatorBlacklist validator
      </notes>
