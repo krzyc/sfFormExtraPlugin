@@ -11,9 +11,10 @@
 /**
  * sfWidgetFormSelectDoubleList represents a multiple select displayed as a double list.
  *
- * This widget needs some JavaScript to work. So, you need to include:
+ * This widget needs some JavaScript to work. So, you need to include the JavaScripts
+ * files returned by the getJavaScripts() method.
  *
- *   /sfFormExtraPlugin/js/double_list.js
+ * If you use symfony 1.2, it can be done automatically for you.
  *
  * @package    symfony
  * @subpackage widget
@@ -138,6 +139,16 @@ EOF
       '%associated%'         => $associatedWidget->render($name),
       '%unassociated%'       => $unassociatedWidget->render('unassociated_'.$name),
     ));
+  }
+
+  /**
+   * Gets the JavaScript paths associated with the widget.
+   *
+   * @return array An array of JavaScript paths
+   */
+  public function getJavascripts()
+  {
+    return array('/sfFormExtraPlugin/js/double_list.js');
   }
 
   public function __clone()

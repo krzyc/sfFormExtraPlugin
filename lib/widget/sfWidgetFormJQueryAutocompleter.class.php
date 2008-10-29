@@ -11,13 +11,12 @@
 /**
  * sfWidgetFormJQueryAutocompleter represents an autocompleter input widget rendered by JQuery.
  *
- * This widget needs JQuery to work. You also need to include this JavaScript file:
+ * This widget needs JQuery to work.
  *
- *   /sfFormExtraPlugin/js/jquery.autocompleter.js
+ * You also need to include the JavaScripts and stylesheets files returned by the getJavaScripts()
+ * and getStylesheets() methods.
  *
- * You can also include the default stylesheet:
- *
- *   /sfFormExtraPlugin/css/jquery.autocompleter.css
+ * If you use symfony 1.2, it can be done automatically for you.
  *
  * @package    symfony
  * @subpackage widget
@@ -90,5 +89,25 @@ EOF
       $this->getOption('config'),
       $this->generateId($name)
     );
+  }
+
+  /**
+   * Gets the stylesheet paths associated with the widget.
+   *
+   * @return array An array of stylesheet paths
+   */
+  public function getStylesheets()
+  {
+    return array('/sfFormExtraPlugin/css/jquery.autocompleter.css' => 'print', '/sfFormExtraPlugin/css/jquery.foo.css' => 'all');
+  }
+
+  /**
+   * Gets the JavaScript paths associated with the widget.
+   *
+   * @return array An array of JavaScript paths
+   */
+  public function getJavascripts()
+  {
+    return array('/sfFormExtraPlugin/js/jquery.autocompleter.js');
   }
 }

@@ -123,6 +123,8 @@
      <date>2008-10-29</date>
      <license>MIT</license>
      <notes>
+       * added getJavascripts() and getStylesheets() method to the widgets that need
+         some javascripts or stylesheets to work
        * removed the need to add an "onsubmit" attribute to the form tag for the DoubleList widget
      </notes>
    </release>
