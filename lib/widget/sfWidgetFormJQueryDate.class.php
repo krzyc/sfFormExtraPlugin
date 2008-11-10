@@ -65,12 +65,7 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
     $image = '';
     if (false !== $this->getOption('image'))
     {
-      $image = sprintf(<<<EOF
-    buttonImage:     %s,
-    buttonImageOnly: true
-EOF
-        , $this->getOption('image')
-      );
+      $image = sprintf(', buttonImage: %s, buttonImageOnly: true', $this->getOption('image'));
     }
 
     return parent::render($name, $value, $attributes, $errors).
@@ -96,7 +91,7 @@ EOF
     maxDate:    new Date(%s, 12 - 1, 31),
     beforeShow: %s_read_linked,
     onSelect:   %s_update_linked,
-    showOn:     "both",
+    showOn:     "both"
     %s
   }, \$.datepicker.regional["%s"], %s));
 </script>
