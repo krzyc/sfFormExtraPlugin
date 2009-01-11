@@ -98,7 +98,7 @@ EOF
    */
   public function getStylesheets()
   {
-    return array('/sfFormExtraPlugin/css/jquery.autocompleter.css' => 'print', '/sfFormExtraPlugin/css/jquery.foo.css' => 'all');
+    return array('/sfFormExtraPlugin/css/jquery.autocompleter.css' => 'all');
   }
 
   /**
