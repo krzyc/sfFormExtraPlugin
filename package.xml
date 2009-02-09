@@ -16,6 +16,12 @@
   <email>nicolas.perriault@symfony-project.com</email>
   <active>yes</active>
  </developer>
+ <developer>
+  <name>Kris Wallsmith</name>
+  <user>Kris.Wallsmith</user>
+  <email>kris.wallsmith@symfony-project.com</email>
+  <active>yes</active>
+ </developer>
  <date>2009-01-11</date>
  <version>
    <release>1.0.7</release>

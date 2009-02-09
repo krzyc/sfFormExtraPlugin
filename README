@@ -50,6 +50,7 @@ Widgets
   * sfWidgetFormJQueryAutocompleter: Displays an input tag with autocomplete support using JQuery
   * sfWidgetFormPropelJQueryAutocompleter: Displays an autocomplete widget tied to a Propel model
   * sfWidgetFormTextareaTinyMCE: A rich textarea rendered with TinyMCE
+  * sfWidgetFormSelectUSState: A select menu of US states
 
 As no third party libraries is bundled in the plugin, you need to install and load the required
 dependencies like JQuery, JQuery UI, or TinyMCE by yourself.
