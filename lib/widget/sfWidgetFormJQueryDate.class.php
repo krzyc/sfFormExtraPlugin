@@ -65,7 +65,7 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
     $image = '';
     if (false !== $this->getOption('image'))
     {
-      $image = sprintf(', buttonImage: %s, buttonImageOnly: true', $this->getOption('image'));
+      $image = sprintf(', buttonImage: "%s", buttonImageOnly: true', $this->getOption('image'));
     }
 
     return parent::render($name, $value, $attributes, $errors).
@@ -86,14 +86,16 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
     jQuery("#%s").val(date.substring(6, 10));
   }
 
-  jQuery("#%s").datepicker(jQuery.extend({}, {
-    minDate:    new Date(%s, 1 - 1, 1),
-    maxDate:    new Date(%s, 12 - 1, 31),
-    beforeShow: wfd_%s_read_linked,
-    onSelect:   wfd_%s_update_linked,
-    showOn:     "both"
-    %s
-  }, jQuery.datepicker.regional["%s"], %s));
+  jQuery(document).ready(function() {
+    jQuery("#%s").datepicker(jQuery.extend({}, {
+      minDate:    new Date(%s, 1 - 1, 1),
+      maxDate:    new Date(%s, 12 - 1, 31),
+      beforeShow: wfd_%s_read_linked,
+      onSelect:   wfd_%s_update_linked,
+      showOn:     "both"
+      %s
+    }, jQuery.datepicker.regional["%s"], %s));
+  });
 </script>
 EOF
       ,
