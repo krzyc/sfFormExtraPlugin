@@ -129,7 +129,8 @@
      <date>2009-02-27</date>
      <license>MIT</license>
      <notes>
-       * fabien: replaced $() with jQuery()
+       * fabian: fixed javascript function names (#5261)
+       * fabien: replaced $() with jQuery() (#4999)
      </notes>
    </release>
    <release>

@@ -72,14 +72,14 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
            $this->renderTag('input', array('type' => 'hidden', 'size' => 10, 'id' => $id = $this->generateId($name).'_jquery_control', 'disabled' => 'disabled')).
            sprintf(<<<EOF
 <script type="text/javascript">
-  function %s_read_linked()
+  function wfd_%s_read_linked()
   {
     jQuery("#%s").val(jQuery("#%s").val() + "/" + jQuery("#%s").val() + "/" + jQuery("#%s").val());
 
     return {};
   }
 
-  function %s_update_linked(date)
+  function wfd_%s_update_linked(date)
   {
     jQuery("#%s").val(date.substring(3, 5));
     jQuery("#%s").val(date.substring(0, 2));
@@ -89,8 +89,8 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
   jQuery("#%s").datepicker(jQuery.extend({}, {
     minDate:    new Date(%s, 1 - 1, 1),
     maxDate:    new Date(%s, 12 - 1, 31),
-    beforeShow: %s_read_linked,
-    onSelect:   %s_update_linked,
+    beforeShow: wfd_%s_read_linked,
+    onSelect:   wfd_%s_update_linked,
     showOn:     "both"
     %s
   }, jQuery.datepicker.regional["%s"], %s));
