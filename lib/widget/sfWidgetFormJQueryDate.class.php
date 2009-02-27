@@ -74,26 +74,26 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
 <script type="text/javascript">
   function %s_read_linked()
   {
-    \$("#%s").val(\$("#%s").val() + "/" + \$("#%s").val() + "/" + \$("#%s").val());
+    jQuery("#%s").val(jQuery("#%s").val() + "/" + jQuery("#%s").val() + "/" + jQuery("#%s").val());
 
     return {};
   }
 
   function %s_update_linked(date)
   {
-    \$("#%s").val(date.substring(3, 5));
-    \$("#%s").val(date.substring(0, 2));
-    \$("#%s").val(date.substring(6, 10));
+    jQuery("#%s").val(date.substring(3, 5));
+    jQuery("#%s").val(date.substring(0, 2));
+    jQuery("#%s").val(date.substring(6, 10));
   }
 
-  \$("#%s").datepicker(\$.extend({}, {
+  jQuery("#%s").datepicker(jQuery.extend({}, {
     minDate:    new Date(%s, 1 - 1, 1),
     maxDate:    new Date(%s, 12 - 1, 31),
     beforeShow: %s_read_linked,
     onSelect:   %s_update_linked,
     showOn:     "both"
     %s
-  }, \$.datepicker.regional["%s"], %s));
+  }, jQuery.datepicker.regional["%s"], %s));
 </script>
 EOF
       ,

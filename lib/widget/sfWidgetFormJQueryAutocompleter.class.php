@@ -69,18 +69,20 @@ class sfWidgetFormJQueryAutocompleter extends sfWidgetFormInput
            parent::render('autocomplete_'.$name, $visibleValue, $attributes, $errors).
            sprintf(<<<EOF
 <script type="text/javascript">
-  \$("#%s")
-  .autocomplete('%s', \$.extend({}, {
-    dataType: 'json',
-    parse:    function(data) {
-      var parsed = [];
-      for (key in data) {
-        parsed[parsed.length] = { data: [ data[key], key ], value: data[key], result: data[key] };
+  jQuery(document).ready(function() {
+    jQuery("#%s")
+    .autocomplete('%s', jQuery.extend({}, {
+      dataType: 'json',
+      parse:    function(data) {
+        var parsed = [];
+        for (key in data) {
+          parsed[parsed.length] = { data: [ data[key], key ], value: data[key], result: data[key] };
+        }
+        return parsed;
       }
-      return parsed;
-    }
-  }, %s))
-  .result(function(event, data) { \$("#%s").val(data[1]); });
+    }, %s))
+    .result(function(event, data) { jQuery("#%s").val(data[1]); });
+  });
 </script>
 EOF
       ,
