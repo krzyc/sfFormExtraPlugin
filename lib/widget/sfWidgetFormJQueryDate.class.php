@@ -81,9 +81,9 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
 
   function wfd_%s_update_linked(date)
   {
-    jQuery("#%s").val(date.substring(3, 5));
-    jQuery("#%s").val(date.substring(0, 2));
-    jQuery("#%s").val(date.substring(6, 10));
+    jQuery("#%s").val(date.substring(0, 4));
+    jQuery("#%s").val(date.substring(5, 7));
+    jQuery("#%s").val(date.substring(8));
   }
 
   function wfd_%s_check_linked_days()
@@ -104,7 +104,7 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
       maxDate:    new Date(%s, 12 - 1, 31),
       beforeShow: wfd_%s_read_linked,
       onSelect:   wfd_%s_update_linked,
-      showOn:     "both"
+      showOn:     "button"
       %s
     }, jQuery.datepicker.regional["%s"], %s, {dateFormat: "yy-mm-dd"}));
   });
