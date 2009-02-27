@@ -129,6 +129,7 @@
      <date>2009-02-27</date>
      <license>MIT</license>
      <notes>
+       * fabien: forced date format returned by the date picker (based on a patch from xdade - #5619)
        * fabien: added JS date selection validity check (based on a patch from h0nIg - #4693)
        * fabien: fixed date picker on IE7 (#4751)
        * fabian: fixed javascript function names (#5261)

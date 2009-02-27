@@ -106,7 +106,7 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
       onSelect:   wfd_%s_update_linked,
       showOn:     "both"
       %s
-    }, jQuery.datepicker.regional["%s"], %s));
+    }, jQuery.datepicker.regional["%s"], %s, {dateFormat: "yy-mm-dd"}));
   });
 
   jQuery("#%s, #%s, #%s").change(wfd_%s_check_linked_days);
@@ -114,9 +114,9 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
 EOF
       ,
       $prefix, $id,
-      $this->generateId($name.'[day]'), $this->generateId($name.'[month]'), $this->generateId($name.'[year]'),
+      $this->generateId($name.'[year]'), $this->generateId($name.'[month]'), $this->generateId($name.'[day]'),
       $prefix,
-      $this->generateId($name.'[day]'), $this->generateId($name.'[month]'), $this->generateId($name.'[year]'),
+      $this->generateId($name.'[year]'), $this->generateId($name.'[month]'), $this->generateId($name.'[day]'),
       $prefix,
       $this->generateId($name.'[year]'), $this->generateId($name.'[month]'),
       $this->generateId($name.'[day]'), $this->generateId($name.'[day]'),
