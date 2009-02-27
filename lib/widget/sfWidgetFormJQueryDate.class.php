@@ -86,6 +86,18 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
     jQuery("#%s").val(date.substring(6, 10));
   }
 
+  function wfd_%s_check_linked_days()
+  {
+    var daysInMonth = 32 - new Date(jQuery("#%s").val(), jQuery("#%s").val() - 1, 32).getDate();
+    jQuery("#%s option").attr("disabled", "");
+    jQuery("#%s option:gt(" + (%s) +")").attr("disabled", "disabled");
+
+    if (jQuery("#%s").val() > daysInMonth)
+    {
+      jQuery("#%s").val(daysInMonth);
+    }
+  }
+
   jQuery(document).ready(function() {
     jQuery("#%s").datepicker(jQuery.extend({}, {
       minDate:    new Date(%s, 1 - 1, 1),
@@ -96,6 +108,8 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
       %s
     }, jQuery.datepicker.regional["%s"], %s));
   });
+
+  jQuery("#%s, #%s, #%s").change(wfd_%s_check_linked_days);
 </script>
 EOF
       ,
@@ -103,9 +117,16 @@ EOF
       $this->generateId($name.'[day]'), $this->generateId($name.'[month]'), $this->generateId($name.'[year]'),
       $prefix,
       $this->generateId($name.'[day]'), $this->generateId($name.'[month]'), $this->generateId($name.'[year]'),
+      $prefix,
+      $this->generateId($name.'[year]'), $this->generateId($name.'[month]'),
+      $this->generateId($name.'[day]'), $this->generateId($name.'[day]'),
+      ($this->getOption('can_be_empty') ? 'daysInMonth' : 'daysInMonth - 1'),
+      $this->generateId($name.'[day]'), $this->generateId($name.'[day]'),
       $id,
       min($this->getOption('years')), max($this->getOption('years')),
-      $prefix, $prefix, $image, $this->getOption('culture'), $this->getOption('config')
+      $prefix, $prefix, $image, $this->getOption('culture'), $this->getOption('config'),
+      $this->generateId($name.'[day]'), $this->generateId($name.'[month]'), $this->generateId($name.'[year]'),
+      $prefix
     );
   }
 }
