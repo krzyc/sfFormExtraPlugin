@@ -74,7 +74,7 @@ class sfWidgetFormJQueryDate extends sfWidgetFormDate
 <script type="text/javascript">
   function wfd_%s_read_linked()
   {
-    jQuery("#%s").val(jQuery("#%s").val() + "/" + jQuery("#%s").val() + "/" + jQuery("#%s").val());
+    jQuery("#%s").val(jQuery("#%s").val() + "-" + jQuery("#%s").val() + "-" + jQuery("#%s").val());
 
     return {};
   }

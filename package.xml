@@ -22,9 +22,9 @@
   <email>kris.wallsmith@symfony-project.com</email>
   <active>yes</active>
  </developer>
- <date>2009-02-27</date>
+ <date>2009-03-12</date>
  <version>
-   <release>1.0.9</release>
+   <release>1.0.10</release>
    <api>1.0.0</api>
  </version>
  <stability>
@@ -116,6 +116,22 @@
  </phprelease>
 
  <changelog>
+   <release>
+     <version>
+       <release>1.0.10</release>
+       <api>1.0.0</api>
+     </version>
+     <stability>
+       <release>stable</release>
+       <api>stable</api>
+     </stability>
+     <license uri="http://www.symfony-project.com/license">MIT license</license>
+     <date>2009-03-12</date>
+     <license>MIT</license>
+     <notes>
+       * fabien: fixed typo
+     </notes>
+   </release>
    <release>
      <version>
        <release>1.0.9</release>
