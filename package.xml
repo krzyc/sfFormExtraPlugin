@@ -130,6 +130,7 @@
      <license>MIT</license>
      <notes>
        * fabien: fixed typo
+       * Kris.Wallsmith: added sfWidgetFormPropelChoiceGrouped
      </notes>
    </release>
    <release>
@@ -166,6 +167,7 @@
        * fabien: fixed date picker on IE7 (#4751)
        * fabian: fixed javascript function names (#5261)
        * fabien: replaced $() with jQuery() (#4999)
+       * Kris.Wallsmith: added sfWidgetFormSelectUSState
      </notes>
    </release>
    <release>
