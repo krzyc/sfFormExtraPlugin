@@ -53,11 +53,14 @@
          <file role="data" name="sfValidatorSchemaTimeInterval.class.php" />
        </dir>
        <dir name="widget">
+         <file role="data" name="sfWidgetFormDoctrineChoiceGrouped.class.php" />
          <file role="data" name="sfWidgetFormJQueryAutocompleter.class.php" />
          <file role="data" name="sfWidgetFormJQueryDate.class.php" />
+         <file role="data" name="sfWidgetFormPropelChoiceGrouped.class.php" />
          <file role="data" name="sfWidgetFormPropelJQueryAutocompleter.class.php" />
          <file role="data" name="sfWidgetFormReCaptcha.class.php" />
          <file role="data" name="sfWidgetFormSelectDoubleList.class.php" />
+         <file role="data" name="sfWidgetFormSelectUSState.class.php" />
          <file role="data" name="sfWidgetFormTextareaTinyMCE.class.php" />
        </dir>
      </dir>
@@ -118,6 +121,24 @@
  <changelog>
    <release>
      <version>
+       <release>1.0.11</release>
+       <api>1.0.0</api>
+     </version>
+     <stability>
+       <release>stable</release>
+       <api>stable</api>
+     </stability>
+     <license uri="http://www.symfony-project.com/license">MIT license</license>
+     <date><!-- forthcoming --></date>
+     <license>MIT</license>
+     <notes>
+       * Kris.Wallsmith: added sfWidgetFormSelectUSState
+       * Kris.Wallsmith: added sfWidgetFormPropelChoiceGrouped
+       * Kris.Wallsmith: added sfWidgetFormDoctrineChoiceGrouped
+     </notes>
+   </release>
+   <release>
+     <version>
        <release>1.0.10</release>
        <api>1.0.0</api>
      </version>
@@ -130,7 +151,6 @@
      <license>MIT</license>
      <notes>
        * fabien: fixed typo
-       * Kris.Wallsmith: added sfWidgetFormPropelChoiceGrouped
      </notes>
    </release>
    <release>
@@ -167,7 +187,6 @@
        * fabien: fixed date picker on IE7 (#4751)
        * fabian: fixed javascript function names (#5261)
        * fabien: replaced $() with jQuery() (#4999)
-       * Kris.Wallsmith: added sfWidgetFormSelectUSState
      </notes>
    </release>
    <release>
