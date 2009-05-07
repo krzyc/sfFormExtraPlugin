@@ -62,7 +62,7 @@ class sfValidatorDoctrineNestedSetLevel extends sfValidatorBase
 
     if ($level >= (int) $this->getOption('max_level'))
     {
-      throw new sfValidatorError($this, 'invalid', array('max_level' => $level));
+      throw new sfValidatorError($this, 'invalid', array('value' => $level));
     }
 
     return $value;
