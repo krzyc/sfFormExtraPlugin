@@ -22,6 +22,12 @@
   <email>kris.wallsmith@symfony-project.com</email>
   <active>yes</active>
  </developer>
+ <developer>
+  <name>Hugo Hamon</name>
+  <user>hugo.hamon</user>
+  <email>hugo.hamon@sensio.com</email>
+  <active>yes</active>
+ </developer>
  <date>2009-04-10</date>
  <version>
    <release>1.0.11</release>
@@ -47,6 +53,9 @@
          <file role="data" name="sfFormLanguage.class.php" />
        </dir>
        <dir name="validator">
+         <dir name="doctrine">
+           <file role="data" name="sfValidatorDoctrineNestedSetLevel.class.php" />
+         </dir>
          <file role="data" name="sfValidatorBlacklist.class.php" />
          <file role="data" name="sfValidatorReCaptcha.class.php" />
          <file role="data" name="sfValidatorSchemaTimeInterval.class.php" />
@@ -118,6 +127,23 @@
  </phprelease>
 
  <changelog>
+   <release>
+     <version>
+       <release>1.0.12</release>
+       <api>1.0.0</api>
+     </version>
+     <stability>
+       <release>stable</release>
+       <api>stable</api>
+     </stability>
+     <license uri="http://www.symfony-project.com/license">MIT license</license>
+     <date>2009-05-07</date>
+     <license>MIT</license>
+     <notes>
+       * hugo.hamon: fixed typo in sfValidatorDoctrineNestedSetLevel validator (r18044)
+       * hugo.hamon: added new sfValidatorDoctrineNestedSetLevel validator to restrict the max level of a nested set objects tree (r18043)
+     </notes>
+   </release>
    <release>
      <version>
        <release>1.0.11</release>
