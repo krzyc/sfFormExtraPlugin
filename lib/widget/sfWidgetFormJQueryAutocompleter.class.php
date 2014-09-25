@@ -69,32 +69,23 @@ class sfWidgetFormJQueryAutocompleter extends sfWidgetFormInput
            parent::render('autocomplete_'.$name, $visibleValue, $attributes, $errors).
            sprintf(<<<EOF
 <script type="text/javascript">
-  jQuery(document).ready(function() {
-    jQuery("#%s")
-    .autocomplete('%s', jQuery.extend({}, {
+  $(function() {
+    $("#%s").autocomplete(jQuery.extend({}, {
+      source: '%s',
       dataType: 'json',
-      parse:    function(data) {
-        var parsed = [];
-        for (key in data) {
-          parsed[parsed.length] = { data: [ data[key], key ], value: data[key], result: data[key] };
-        }
-        return parsed;
+      select: function(event, data) {
+        jQuery("#%s").val(data.item.id);
       }
-    }, %s))
-    .result(function(event, data) { jQuery("#%s").val(data[1]); })
-    .keyup(function() {
-      if(this.value.length == 0) {
-        $('#%s').val('');
-      }
-    });
+    }, %s));
+    $("#%s").attr("autocomplete", "off")
   });
 </script>
 EOF
       ,
       $this->generateId('autocomplete_'.$name),
       $this->getOption('url'),
-      $this->getOption('config'),
       $this->generateId($name),
+      $this->getOption('config'),
       $this->generateId($name)
     );
   }
@@ -104,18 +95,18 @@ EOF
    *
    * @return array An array of stylesheet paths
    */
-  public function getStylesheets()
+  /*public function getStylesheets()
   {
     return array('/sfFormExtraPlugin/css/jquery.autocompleter.css' => 'all');
-  }
+  }*/
 
   /**
    * Gets the JavaScript paths associated with the widget.
    *
    * @return array An array of JavaScript paths
    */
-  public function getJavascripts()
+  /*public function getJavascripts()
   {
     return array('/sfFormExtraPlugin/js/jquery.autocompleter.js');
-  }
+  }*/
 }
